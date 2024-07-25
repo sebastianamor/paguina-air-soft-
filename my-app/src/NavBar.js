@@ -6,7 +6,7 @@ function NavBar({ onSelect }) {
     <nav className="navbar">
       <ul>
         <li><button onClick={() => onSelect('home')}>Inicio</button></li>
-        <li><button onClick={() => onSelect('services')}>Servicios</button></li>
+        <li><button onClick={() => onSelect('services')}>productos</button></li>
         <li><button onClick={() => onSelect('contact')}>Contacto</button></li>
         <li><button onClick={() => onSelect('location')}>Ubicación</button></li>
         <li><button onClick={() => onSelect('blog')}>Blog</button></li>
