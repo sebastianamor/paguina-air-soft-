@@ -1,99 +1,116 @@
 import React, { useState } from 'react';
 import './Services.css';
-import { FaBalanceScale } from "react-icons/fa";
-import civil from './imagenes/civil.jpeg'
-import familia from './imagenes/familia.jpeg'
-import laboral from './imagenes/laboral.jpeg'
-import penal from './imagenes/penal.jpeg'
+import llantas from './imagenes/llantas de autos.jpg';
+import neumaticos from './imagenes/neumaticos.jpg';
+import butacas from './imagenes/butacas racer.jpg';
+import otros from './imagenes/otros auto.jpg';
+import llan1  from './imagenes/llanta 1.jpg';
+import llan2  from './imagenes/llanta 2.jpg'
+import llan3  from './imagenes/llanta 3.jpg'
+import llan4  from './imagenes/llanta 4.jpg'
+import llan5  from './imagenes/llanta 5.jpg'
+import neum1 from './imagenes/neumatico 1.jpg'
+import neum2 from './imagenes/neumatico 2.jpg'
+import butaca1 from './imagenes/butca 1.jpg'
+import buta2  from './imagenes/butaca2.jpg'
+import buta3 from './imagenes/butaca3.jpg'
+import buta4 from './imagenes/butaca5.jpg'
+import buta5 from './imagenes/butaca6.jpg'
+import neum3 from './imagenes/neumat3.jpg'
+import neum4 from './imagenes/neumat4.jpg'
+import neum5 from './imagenes/neumat5.jpg'
+import otr1 from  './imagenes/otr1.jpg'
+import otr2 from './imagenes/otr2.jpg'
+import otr3 from './imagenes/otr3.jpg'
+import otr4 from './imagenes/otr4.jpg'
+import otr5 from './imagenes/otr5.jpg'
 
 function Services() {
-  const [message, setMessage] = useState('');
+  const [selectedService, setSelectedService] = useState('');
 
   const handleButtonClick = (service) => {
-    let msg = '';
+    setSelectedService(service);
+  };
+
+  const renderMessage = (service) => {
     switch (service) {
-      case 'asesoria':
-        msg = <div><p>  <h1>Derecho Penal</h1> </p>
-            <p>Dppj se especializa en litigios de alta complejidad a nivel nacional e internacional. El estudio
-               otorga asesoría especializada en delitos económicos, tributarios, violaciones a leyes anti-
-               corrupción, lavado de activos, e infracciones a leyes de propiedad industrial e intelectual, entre
-               otros. </p>
-               <p>
-               contamos con un equipo penal multidisciplinario, lo que le permite representar a imputados y
-               víctimas, desde una etapa temprana, en materia de prevención y análisis de riesgos, así como
-               con una adecuada planificación, proceso de investigación interna y reacción estratégica frente
-               a una contingencia penal, representando los intereses de los clientes ante instancias
-               administrativas y judiciales a lo largo de todo el territorio nacional. </p></div>
-            
-        break;
-      case 'representacion':
-        msg = <div><p><h1>Derecho Civil</h1></p>
-               <p>Civil, brindamos un completo apoyo a demandantes o demandados en sus causas,
-                proporcionando una solución rápida y oportuna a sus problemas y necesidades.
-                Juicios de Arrendamiento </p>
-                <ul>
-                  <li><FaBalanceScale /> Prescripción de Deudas</li>
-                  <li><FaBalanceScale /> Precarios
-                  Cambio de nombre</li>
-                  <li><FaBalanceScale /> Cobro de Honorarios</li>
-                  <li><FaBalanceScale /> Indemnización de Perjuicios
-                      Responsabilidad Extracontractual</li>
-                      <li><FaBalanceScale /> Asesoría Inmobiliaria</li>
-                  </ul></div>
-        break;
-      case 'consultoria':
-        msg = <div><p><h1>Derecho de Familia</h1></p>
-                  <p>En materia sobre derecho de Familia tendrás soluciones legales efectivas para problemas de
-                   familia. Nuestro equipo de abogados te acompaña, asesora y protege tus derechos en casos
-                   de deuda de pensión de alimentos, cuidado personal, divorcio, violencia intrafamiliar,
-                   adopciones y mucho más.</p>
-                   <ul>
-                    <li><FaBalanceScale /> Divorcios</li>
-                    <li><FaBalanceScale /> Alimentos</li>
-                    <li><FaBalanceScale /> Cuidado Personal</li>
-                    <li><FaBalanceScale /> Relación directa y regular</li>
-                    <li><FaBalanceScale /> Autorización de salida del país</li>
-                    <li><FaBalanceScale /> Violencia Intrafamiliar</li> 
-                    <li><FaBalanceScale /> Medidas de Protección</li></ul></div>;
-        break;
-      case 'redaccion':
-        msg = <div><p><h1>Derecho Laboral</h1></p>
-               <p>En materia sobre derecho laboral, contamos con amplia experiencia en procesos de
-                  contratación y terminación de trabajadores (individuales y masivas), paquetes de
-                  compensación (incluyendo planes de acciones) cumplimiento legal, subcontrataciones,
-                  políticas corporativas, asuntos laborales derivados y/o asociados a fusiones y adquisiciones,
-                  investigaciones internas, asuntos de seguridad social e impuestos a los trabajadores.
-                  participamos activamente en procesos de negociación colectiva en empresas de diferentes
-                  rubros y también asesora a clientes en juicios y reclamaciones laborales, incluyendo litigios
-                  y procedimientos administrativos derivados de accidentes laborales y enfermedades 
-                  profesionales.
-                  En materia de subcontratación de servicios, asesoramos permanentemente a empresas
-                  subcontratistas y propietarios en proyectos relativos a estas materias, identificando y
-                  mitigando riesgos y responsabilidades legales asociadas.</p>
-                  <ul>
-                    <li><FaBalanceScale /> Asesoría Laboral a Empresas</li>
-                    <li><FaBalanceScale /> cobranza laboral y previsional</li>
-                    <li><FaBalanceScale /> Abogados Trabajadores</li>
-                    <li><FaBalanceScale /> Despido injustificado</li>
-                    <li><FaBalanceScale /> Accidente laboral y enfermedad Profesional</li>
-                    <li><FaBalanceScale /> Tutela Laboral</li></ul></div>
-        break;
+      case 'llantas':
+        return <p>
+          <h1>Llantas    
+          </h1>
+       <a   href="https://www.instagram.com/jmvimports_llantas/" target="_blank"  > <div class="gallery"    >
+  <img src={llan1}   alt="the beach"/>
+  <img src={llan2} alt="a girl doing kayak"/>
+  <img src={llan3} alt="a small boat in the sea"/>
+  <img src={llan4} alt="a mountain"/>
+  <img src={llan5} alt="a forest"/>
+       </div></a>
+        </p>
+      case 'neumaticos':
+        return <p><h1>Neumáticos</h1>
+            <a   href="https://www.instagram.com/jmvimports_llantas/" target="_blank"  > <div class="gallery"    >
+  <img src={neum1}/>
+  <img src={neum2}/>
+  <img src={neum3}/>
+  <img src={neum4}/>
+  <img src={neum5}/>
+       </div></a>
+        </p>;
+      case 'butacas':
+        return <p><h1>Butacas</h1>
+             <a   href="https://www.instagram.com/jmvimports_llantas/" target="_blank"  > <div class="gallery"    >
+  <img src={butaca1}/>
+  <img src={buta2}/>
+  <img src={buta3}/>
+  <img src={buta4}/>
+  <img src={buta5}/>
+       </div></a>
+         </p>;
+      case 'otros':
+        return <p><h1>Otros</h1>
+            <a   href="https://www.instagram.com/jmvimports_llantas/" target="_blank"  > <div class="gallery"    >
+  <img src={otr1}/>
+  <img src={otr2}/>
+  <img src={otr3}/>
+  <img src={otr4}/>
+  <img src={otr5}/>
+  
+       </div></a>
+        </p>;
       default:
-        msg = '';
+        return null;
     }
-    setMessage(msg);
   };
 
   return (
     <section className="services">
-      <h2>Servicios</h2>
+      <h2>Productos</h2>
       <div className="service-buttons">
-        <button onClick={() => handleButtonClick('asesoria')}> <img src={penal} alt="civ" className="civ"/>   Derecho Penal</button>
-        <button onClick={() => handleButtonClick('representacion')}> <img src={civil} alt="civ" className="civ"/>  Derecho Civil </button>
-        <button onClick={() => handleButtonClick('consultoria')}> <img src={familia} alt="civ" className="civ"/>  Derecho de Familia</button>
-        <button onClick={() => handleButtonClick('redaccion')}> <img src={laboral} alt="civ" className="civ"/> Derecho Laboral</button>
+        <div className="service-item">
+          <button onClick={() => handleButtonClick('llantas')}>
+            <img src={llantas} alt="Llantas" className="civ" />
+          </button>
+          {selectedService === 'llantas' && <div className="service-message">{renderMessage('llantas')}</div>}
+        </div>
+        <div className="service-item">
+          <button onClick={() => handleButtonClick('neumaticos')}>
+            <img src={neumaticos} alt="Neumáticos" className="civ" />
+          </button>
+          {selectedService === 'neumaticos' && <div className="service-message">{renderMessage('neumaticos')}</div>}
+        </div>
+        <div className="service-item">
+          <button onClick={() => handleButtonClick('butacas')}>
+            <img src={butacas} alt="Butacas" className="civ" />
+          </button>
+          {selectedService === 'butacas' && <div className="service-message">{renderMessage('butacas')}</div>}
+        </div>
+        <div className="service-item">
+          <button onClick={() => handleButtonClick('otros')}>
+            <img src={otros} alt="Otros" className="civ" />
+          </button>
+          {selectedService === 'otros' && <div className="service-message">{renderMessage('otros')}</div>}
+        </div>
       </div>
-      {message && <p className="service-message">{message}</p>}
     </section>
   );
 }

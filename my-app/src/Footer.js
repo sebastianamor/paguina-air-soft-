@@ -5,21 +5,20 @@ import { FcAddressBook } from "react-icons/fc";
 import { FcDepartment } from "react-icons/fc";
 import { FaLinkedin } from "react-icons/fa6";
 
-import { FaInstagram } from "react-icons/fa";
 
-function Footer() {
+function Footer({ onSelect } ) {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="about">
-          <h3></h3>
-          <p>
-            
-          </p>
-     
-      <a href="https://www.instagram.com/jmvimports_llantas/" target="_blank" rel="noopener noreferrer" className="firma" >
-       <FaInstagram icon={<FaInstagram />}  className="firma"  size={100} />
-      </a>
+        <ul>
+        <li>  <button   className="bn3637 bn38 "   href='/'  onClick={() => onSelect('home')}>Inicio</button></li>
+        <li>  <button   className="bn3637 bn38 "   href='/'  onClick={() => onSelect('services')}>Productos</button></li>
+        <li> <button   className="bn3637 bn38 " onClick={() => onSelect('contact')}>Contacto</button></li>
+        <li>  <button   className="bn3637 bn38 "  href='/'  onClick={() => onSelect('location')}>Ubicación</button></li>
+        <li> <button   className="bn3637 bn38 "   href='/'  onClick={() => onSelect('blog')}>Pagos</button></li>
+      </ul>
+
         </div>
         <div>
       <a href="https://jp.linkedin.com/in/sebastian-jacob-moreira-vergara-7b76717a" target="_blank" rel="noopener noreferrer" className="firma"  >
@@ -29,9 +28,9 @@ function Footer() {
         <div className="contact-info">
           <h3>Contacto</h3>
           <ul>
-            <li><FcPhone />+56 9 7692 3044  </li>
-            <li> <FcAddressBook /> jmvimports01@gmail.com  </li>
-            <li><FcDepartment /> </li>
+          <li ><i ><span ><a href="tel:+56 9 7692 3044" title="telefono contacto"><FcPhone />+56 9 7692 3044 </a></span></i></li>
+          <li ><i ><span ><a href="mailto:jmvimports01@gmail.com " title="email de contacto y cotiazacion"><FcAddressBook />jmvimports01@gmail.com</a></span></i></li>
+            <li ><i ><span> <a href='https://maps.app.goo.gl/9b3RjLuWcNs7agr68'  > <FcDepartment />serafin zamora 0310 , santiago maipu Bodega 10</a></span></i></li>
           </ul>
         </div>
       </div>
