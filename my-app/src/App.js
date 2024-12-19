@@ -9,7 +9,7 @@ import Map from './Map';
 import Footer from './Footer';
 import Blog from './Blog';
 import FloatingButton from './FloatingButton';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-
+import dosa from './imagenes/dos a.jpg'
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BiLogoWhatsappSquare } from "react-icons/bi";
@@ -9,14 +9,16 @@ import { BiLogoWhatsappSquare } from "react-icons/bi";
 function Home() {
   return (
     <section   className="home">
-       <h2>ciudad airsoft</h2>
+      <div>
       <p className='iniciopag'>
-     
+      <img src={dosa} alt='dosa' className='dosa' /> 
+      "Somos dos apasionados del Paintball y Airsoft con más de 11 años de experiencia en estos emocionantes deportes.
+       Nuestra pasión nos llevó a crear un campo de juego exclusivo para que los amantes de estas actividades puedan disfrutar de una experiencia única y segura.
       </p>
+      </div>
       <hr></hr>
         <div className="home-text">
           <div className="inicio" >
-          <p><h3></h3> </p>
           </div>
           </div>
           <div className="home-item">

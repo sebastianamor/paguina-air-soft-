@@ -13,6 +13,7 @@ function NavBar({ onSelect }) {
       </ul>
     </nav>
   );
+
 }
 
 export default NavBar;

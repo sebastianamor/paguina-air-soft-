@@ -8,16 +8,27 @@ body {
   padding: 10px;
 }
 
-
+.home p {
+  color: rgba(84, 171, 17, 0.737);
+  font-family: "Black Ops One", system-ui;
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+.dosa {
+  max-width: 800px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 8px;
+}
 .iniciopag{
   background-size: 1500px;
   background-position: center;
-  font-size: xx-large; 
-  
+  font-size: xx-large;
+  background-color: black;
+  flex: 1; /* El texto ocupará el espacio restante */
+  font-size: 1.2em;
+  line-height: 1.5;
 }
-
-
-
 .home-item {
   display: flex;
   align-items: flex-start;
@@ -32,14 +43,9 @@ body {
   width: 150px;
   height: 50px;
   padding-bottom: 20px;
-  
 }
 
-.stark {
-  width: 50px;
-  height: 50px;
-  padding: 10px 10px 10px 10px;
-}
+
 
 .home-text {
   max-width: 600px;
@@ -49,19 +55,20 @@ body {
 .home-text h2 {
   font-size: 2em;
   margin-bottom: 20px;
-}
-
-
-
-
-.vermon {
-  width: 100px;
-  height: 50px;
-  padding:  10px 30px 10px 10px;
-  align-items: center;
+  
 }
 
 .firmaf{
   padding-left: 20px;
   
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center; /* Centra el texto */
+  }
+
+  .content img {
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
 }
