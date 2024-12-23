@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import dosa from './imagenes/dos a.jpg'
+import tresP from './imagenes/tres.jpg'
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BiLogoWhatsappSquare } from "react-icons/bi";
@@ -22,17 +23,26 @@ function Home() {
           </div>
           </div>
           <div className="home-item">
-         
+          <img src={tresP} alt='tres' className='tres' /> 
+          Nuestra cancha está diseñada para proporcionar un entorno de juego emocionante y desafiante, con obstáculos y terrenos variados que pondrán a prueba tus habilidades y estrategias.
           <div className="home-text"></div>
           </div>
           <hr></hr>
           <div className="home">
-      
         <div className="iniciopag">
           <div className="inicio" ></div>
-          <p>
-          
+          <p  className='final' >
+          ¿Estás listo para unirte a la acción y vivir una experiencia inolvidable? ¡Ven y únete a nosotros en nuestra cancha de Paintball y Airsoft!"
           </p>
+          </div>
+          <hr></hr>
+          <div class="containeA">
+          <div class="box left">
+          <p>Entrada general:6.000</p>
+           </div>
+           <div class="box right">
+           <p>Arriendo de equipo:25000</p>
+          </div>
           </div>
           <a aria-label="Chat on WhatsApp" href="https://wa.me/56976923044 "> <BiLogoWhatsappSquare  className="firma"  size={100}   />  </a>
           </div>

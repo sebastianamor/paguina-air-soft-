@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-  font-style: "Noto Sans", sans-serif;;
-}
 
 .home {
   padding: 10px;
@@ -13,62 +10,157 @@ body {
   font-family: "Black Ops One", system-ui;
   display: flex;
   align-items: center;
-  gap: 20px; 
+  gap: 20px;
+  text-align: justify;
 }
+
 .dosa {
-  max-width: 800px; /* Ajusta el tamaño máximo de la imagen */
+  max-width: 50%; /* La imagen se adapta al ancho del contenedor */
   height: auto;
   border-radius: 8px;
 }
-.iniciopag{
-  background-size: 1500px;
+
+
+.tres {
+  max-width: 50%; /* La imagen se adapta al ancho del contenedor */
+  height: auto;
+  border-radius: 8px;
+}
+
+.iniciopag {
+  background-size: cover;
   background-position: center;
-  font-size: xx-large;
-  background-color: black;
-  flex: 1; /* El texto ocupará el espacio restante */
   font-size: 1.2em;
+  background-color: black;
+  color: white;
   line-height: 1.5;
+  padding: 10px;
+  text-align: left;
 }
+
 .home-item {
+  background-size: cover;
+  background-position: center;
+  font-size: 1.2em;
+  background-color: black;
+  line-height: 1.5;
+  padding: 10px;
+  text-align: right;
+  color: rgba(84, 171, 17, 0.737);
+  font-family: "Black Ops One", system-ui;
   display: flex;
-  align-items: flex-start;
-  justify-content: left;
-  margin-bottom: 40px;
-  font-size: medium;
-  padding: 10px -10px 10px 10px ;
-  max-width: 100px;
+  align-items: center;
+  gap: 20px;
+  text-align: justify;
 }
 
-.pullmac {
-  width: 150px;
-  height: 50px;
-  padding-bottom: 20px;
+.final{
+  background-size: cover;
+  background-position: center;
+  font-size: 2.2em;
+  background-color: black;
+  line-height: 1.5;
+  padding: 10px;
+  text-align: right;
+  color: rgba(84, 171, 17, 0.737);
+  font-family: "Black Ops One", system-ui;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: justify;
 }
-
-
 
 .home-text {
-  max-width: 600px;
-  
-}
+  max-width: 100%; /* Se ajusta al contenedor en pantallas pequeñas */
+  text-align: center;
+} 
 
 .home-text h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  
+  font-size: 1.5em; /* Reduce el tamaño en móviles */
+  margin-bottom: 15px;
 }
 
-.firmaf{
-  padding-left: 20px;
-  
+.firmaf {
+  padding-left: 10px;
 }
+
+
+ /*body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}*/
+
+.containerA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+}
+
+.box {
+  background-color: #144532;
+  color: #fff;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.box.left {
+  margin-right: auto;
+}
+
+.box.right {
+  margin-left: auto;
+}
+
+
+
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
-  .content {
+  .home-item {
     flex-direction: column;
-    text-align: center; /* Centra el texto */
+    text-align: center;
   }
 
-  .content img {
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  .dosa {
+    max-width: 90%; /* Deja un margen en los lados */
+    margin: 0 auto 20px auto;
+  }
+
+  .iniciopag {
+    font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    text-align: center;
+    padding: 15px;
+  }
+
+  .home p {
+    flex-direction: column;
+    gap: 10px; /* Reduce el espacio entre la imagen y el texto */
+  }
+
+  .home-text h2 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    margin: 10px 0;
   }
 }
