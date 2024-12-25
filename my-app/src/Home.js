@@ -36,15 +36,20 @@ function Home() {
           </p>
           </div>
           <hr></hr>
+          <div className='bodyA'  >
           <div class="containeA">
           <div class="box left">
-          <p>Entrada general:6.000</p>
+          <p>Entrada general: 
+          6.000</p>
+          <button class="reserve-btn"    >Reserva</button>
            </div>
            <div class="box right">
-           <p>Arriendo de equipo:25000</p>
+           <p>Arriendo de equipo: 25000</p>
+           <button class="reserve-btn">Reserva</button>
           </div>
           </div>
           <a aria-label="Chat on WhatsApp" href="https://wa.me/56976923044 "> <BiLogoWhatsappSquare  className="firma"  size={100}   />  </a>
+          </div>
           </div>
           <hr></hr>
           <div className="home-r">
