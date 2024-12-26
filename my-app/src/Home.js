@@ -2,14 +2,16 @@ import React from 'react';
 import './Home.css';
 import dosa from './imagenes/dos a.jpg'
 import tresP from './imagenes/tres.jpg'
+import general from './imagenes/general.jpg'
+import equipo1 from './imagenes/p1.jpg'
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BiLogoWhatsappSquare } from "react-icons/bi";
 
 
-function Home() {
+function Home({ onSelect }) {
   return (
-    <section   className="home">
+    <section className="home">
       <div>
       <p className='iniciopag'>
       <img src={dosa} alt='dosa' className='dosa' /> 
@@ -39,12 +41,19 @@ function Home() {
           <div className='bodyA'  >
           <div class="containeA">
           <div class="box left">
-          <p>Entrada general: 
+          <p>
+          <img src={general} alt='general' className='general' /> 
+            Entrada general: 
           6.000</p>
-          <button class="reserve-btn"    >Reserva</button>
+          <button class="reserve-btn" onClick={() => onSelect('')}>Reserva</button>
            </div>
            <div class="box right">
+           <img src={equipo1} alt='equipo1' className='equipo1' /> 
            <p>Arriendo de equipo: 25000</p>
+           <button class="reserve-btn">Reserva</button>
+          </div>
+          <div class="box right">
+           <p> hacemos eventos de todo tipo !  precios y cotizaciones aqui   </p>
            <button class="reserve-btn">Reserva</button>
           </div>
           </div>

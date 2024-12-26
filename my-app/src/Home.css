@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
 .home {
   padding: 10px;
@@ -12,19 +17,32 @@
   align-items: center;
   gap: 20px;
   text-align: justify;
+  flex-wrap: wrap;
 }
 
-.dosa {
-  max-width: 50%; /* La imagen se adapta al ancho del contenedor */
-  height: auto;
-  border-radius: 8px;
-}
-
-
+.dosa,
 .tres {
-  max-width: 50%; /* La imagen se adapta al ancho del contenedor */
+  max-width: 45%; /* Imagen ocupa menos espacio en móviles */
   height: auto;
   border-radius: 8px;
+  margin: 0 auto;
+}
+
+.equipo1 {
+  max-width: 45%; /* Imagen ocupa menos espacio en móviles */
+  height: auto;
+  width: 500px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+
+.general {
+  max-width: 45%; /* Imagen ocupa menos espacio en móviles */
+  height: auto;
+  width: 400px;
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
 .iniciopag {
@@ -41,42 +59,42 @@
 .home-item {
   background-size: cover;
   background-position: center;
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: black;
   line-height: 1.5;
   padding: 10px;
-  text-align: right;
+  text-align: justify;
   color: rgba(84, 171, 17, 0.737);
   font-family: "Black Ops One", system-ui;
   display: flex;
   align-items: center;
   gap: 20px;
-  text-align: justify;
+  flex-wrap: wrap;
 }
 
-.final{
+.final {
   background-size: cover;
   background-position: center;
-  font-size: 2.2em;
+  font-size: 1.5em;
   background-color: black;
   line-height: 1.5;
   padding: 10px;
-  text-align: right;
+  text-align: justify;
   color: rgba(84, 171, 17, 0.737);
   font-family: "Black Ops One", system-ui;
   display: flex;
   align-items: center;
   gap: 20px;
-  text-align: justify;
+  flex-wrap: wrap;
 }
 
 .home-text {
-  max-width: 100%; /* Se ajusta al contenedor en pantallas pequeñas */
+  max-width: 100%; /* Ajuste para pantallas pequeñas */
   text-align: center;
-} 
+}
 
 .home-text h2 {
-  font-size: 1.5em; /* Reduce el tamaño en móviles */
+  font-size: 1.2em;
   margin-bottom: 15px;
 }
 
@@ -84,22 +102,20 @@
   padding-left: 10px;
 }
 
-
 .containerA {
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%; /* Se ajusta al ancho del dispositivo */
   max-width: 800px;
-
 }
 
 .box {
   background-color: #144532;
   color: #fff;
-  width: 1250px;
-  height: 250px;
+  width: 90%; /* Ajuste para móviles */
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,17 +123,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-size: 2.2em;
-  padding: 40px 30px 50px;
-
-}
-
-.box.left {
-  margin-right: auto;
-}
-
-.box.right {
-  margin-left: auto;
+  font-size: 3.2em;
+  margin: 10px auto;
+  padding: 20px;
 }
 
 .reserve-btn {
@@ -134,7 +142,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   .home-item {
@@ -142,31 +149,39 @@
     text-align: center;
   }
 
-  .dosa {
-    max-width: 90%; /* Deja un margen en los lados */
+  .dosa,
+  .tres {
+    max-width: 90%;
     margin: 0 auto 20px auto;
   }
 
   .iniciopag {
-    font-size: 1em; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    font-size: 1em;
     text-align: center;
     padding: 15px;
   }
 
   .home p {
     flex-direction: column;
-    gap: 10px; /* Reduce el espacio entre la imagen y el texto */
+    gap: 10px;
   }
 
   .home-text h2 {
     font-size: 1.2em;
   }
+
+  .box {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
+
 @media (max-width: 600px) {
-  .container {
+  .containerA {
     flex-direction: column;
     align-items: center;
   }
+
   .box {
     margin: 10px 0;
   }
