@@ -45,16 +45,16 @@ function Home({ onSelect }) {
           <img src={general} alt='general' className='general' /> 
             Entrada general: 
           6.000</p>
-          <button class="reserve-btn" onClick={() => onSelect('')}>Reserva</button>
+          <button class="reserve-btn" onClick={() => onSelect('contact')}>Reserva</button>
            </div>
            <div class="box right">
            <img src={equipo1} alt='equipo1' className='equipo1' /> 
            <p>Arriendo de equipo: 25000</p>
-           <button class="reserve-btn">Reserva</button>
+           <button class="reserve-btn"  onClick={() => onSelect('contact')} >Reserva</button>
           </div>
           <div class="box right">
            <p> hacemos eventos de todo tipo !  precios y cotizaciones aqui   </p>
-           <button class="reserve-btn">Reserva</button>
+           <button class="reserve-btn"  onClick={() => onSelect('contact')}  >Reserva</button>
           </div>
           </div>
           <a aria-label="Chat on WhatsApp" href="https://wa.me/56976923044 "> <BiLogoWhatsappSquare  className="firma"  size={100}   />  </a>

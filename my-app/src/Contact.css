@@ -2,6 +2,7 @@
 #contact {
   width: 100%;
   height: 100%;
+  font-family: "Black Ops One", system-ui;
 }
 
 .section-header {
@@ -12,6 +13,7 @@
   color: #111010;
   text-transform: uppercase;
   letter-spacing: 6px;
+  font-family: "Black Ops One", system-ui;
 }
 .contact-wrapper {
   display: flex;
@@ -27,7 +29,7 @@
 .form-horizontal {
   /*float: left;*/
   max-width: 400px;
-  font-family: 'Lato';
+  font-family: "Black Ops One", system-ui;
   font-weight: 400;
 }
 
@@ -55,7 +57,7 @@ textarea {
 
 .send-text {
   display: block;
-  font: 700 12px 'Lato', sans-serif;
+  font-family: "Black Ops One", system-ui;
   letter-spacing: 2px;
 }
 
@@ -63,6 +65,7 @@ textarea {
 
 .direct-contact-container {
   max-width: 400px;
+  
 }
 
 /* Location, Phone, Email Section */
@@ -78,7 +81,7 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font-family: "Black Ops One", system-ui;
   letter-spacing: 1.9px;
   color: #141414;
 }
@@ -131,6 +134,7 @@ textarea {
   background-color: rgb(27,27,27);
   cursor: pointer; 
   transition: all .2s ease-in-out;
+  font-family: "Black Ops One", system-ui;
 }
 
 .social-media-list li:after {

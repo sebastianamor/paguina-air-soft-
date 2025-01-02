@@ -18,7 +18,7 @@ function Contact() {
      
   <section id="contact">
   
-  <h1 class="section-header">Contacto</h1>
+  <h1 class="section-header">Contacto y reservas  </h1>
   
   <div class="contact-wrapper">
     
@@ -51,21 +51,21 @@ function Contact() {
       <div class="direct-contact-container">
 
         <ul class="contact-list">
-          <li class="list-item"><i ><span class="contact-text place"> <a href='https://maps.app.goo.gl/9b3RjLuWcNs7agr68'  ><MdPlace /> serafin zamora 0310 , santiago maipu Bodega 10</a></span></i></li>
+          <li class="list-item"><i ><span class="contact-text place"> <a href=' https://maps.app.goo.gl/Uj5mXHBFWgPEoNer8  '  ><MdPlace /> Av. Balmaceda 20694, 9670858 Talagante, Región Metropolitana, entrada por calle Loreto   </a></span></i></li>
           <li class="list-item"><i ><span class="contact-text phone"><a href="tel:+56 9 7692 3044" title="contacto"> <BiSolidPhoneCall />
-          +56 9 7692 3044 </a></span></i></li>
+          +56 9 7479 4029 </a></span></i></li>
           
           <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:jmvimports01@gmail.com" title="Send me an email"> <MdAlternateEmail />
-          jmvimports01@gmail.com</a></span></i></li>
+          ciudadairsoft@gmail.com </a></span></i></li>
           
         </ul>
 
         
         <ul class="social-media-list">
           siguenos en  
-          <a href="https://www.facebook.com/jmvimports/" target="_blank" rel="noopener" class="contact-icon"   >
+          <a href=" https://www.facebook.com/profile.php?id=100078725806219 " target="_blank" rel="noopener" class="contact-icon"   >
            <FaFacebook  icon={<FaFacebook />}/></a>
-          <a  href="https://www.instagram.com/jmvimports_llantas/"  target="_blank" class="contact-icon">
+          <a  href="https://www.instagram.com/ciudadairsoft/?igsh=MWp6eG13Mnk2OHppcg%3D%3D"  target="_blank" class="contact-icon">
             <i  aria-hidden="true"><BiLogoInstagram /></i></a>    
         </ul>
 
