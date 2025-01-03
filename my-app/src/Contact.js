@@ -9,10 +9,6 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdAlternateEmail } from "react-icons/md";
 
 
-
-
-
-
 function Contact() {
  return (
      
@@ -52,10 +48,10 @@ function Contact() {
 
         <ul class="contact-list">
           <li class="list-item"><i ><span class="contact-text place"> <a href=' https://maps.app.goo.gl/Uj5mXHBFWgPEoNer8  '  ><MdPlace /> Av. Balmaceda 20694, 9670858 Talagante, Región Metropolitana, entrada por calle Loreto   </a></span></i></li>
-          <li class="list-item"><i ><span class="contact-text phone"><a href="tel:+56 9 7692 3044" title="contacto"> <BiSolidPhoneCall />
+          <li class="list-item"><i ><span class="contact-text phone"><a href="tel:+56 9 7479 4029" title="contacto"> <BiSolidPhoneCall />
           +56 9 7479 4029 </a></span></i></li>
           
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:jmvimports01@gmail.com" title="Send me an email"> <MdAlternateEmail />
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:ciudadairsoft@gmail.com" title="Send me an email"> <MdAlternateEmail />
           ciudadairsoft@gmail.com </a></span></i></li>
           
         </ul>

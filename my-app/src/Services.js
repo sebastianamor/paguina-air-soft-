@@ -60,7 +60,6 @@ function Services() {
   <img src={buta5}/>
        </div></a>
          </p>;
-    
       default:
         return null;
     }
@@ -68,7 +67,7 @@ function Services() {
 
   return (
     <section className="services">
-      <h2>Productos</h2>
+      <h2>fotos y videos</h2>
       <div className="service-buttons">
         <div className="service-item">
           <button onClick={() => handleButtonClick('llantas')}>

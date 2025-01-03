@@ -2,8 +2,8 @@ import React from 'react';
 import './FloatingButton.css';
 
 function FloatingButton() {
-  const phoneNumber = "+56 9 7692 3044 "; // Reemplaza esto con tu número de teléfono de WhatsApp
-  const message = "Hola, estoy interesado en sus productos"; // Mensaje predeterminado
+  const phoneNumber = "56974794029"; // Reemplaza esto con tu número de teléfono de WhatsApp
+  const message = "Hola, estoy interesado en reservar"; // Mensaje predeterminado
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

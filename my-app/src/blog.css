@@ -2,5 +2,9 @@
   width: 350px;
   height: 100px;
   padding-bottom: 20px;
-  
+  font-family: "Black Ops One", system-ui;
+}
+
+.blog {
+  font-family: "Black Ops One", system-ui;
 }

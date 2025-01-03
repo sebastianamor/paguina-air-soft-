@@ -2,11 +2,13 @@
 .map {
   padding: 20px;
   text-align: center;
+  font-family: "Black Ops One", system-ui;
+
 }
 
-.map h2 {
+.map p {
   font-family: "Black Ops One", system-ui;
-  font-size: 2em;
+  font-size: 7em;
   margin-bottom: 20px;
   
 }

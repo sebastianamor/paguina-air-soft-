@@ -6,7 +6,7 @@ function Blog() {
       <h2>Blog</h2>
       <iframe
         title="blog"
-        src="https://abogadomigueltoledo.blogspot.com/?m=1"
+        src=" https://ciudadairsoft.blogspot.com/2025/01/airsoft-talagante.html"
         width="400"
         height="500"
         style={{ border: 0 }}
