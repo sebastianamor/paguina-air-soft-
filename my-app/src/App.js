@@ -9,11 +9,7 @@ import Map from './Map';
 import Footer from './Footer';
 import Blog from './Blog';
 import FloatingButton from './FloatingButton';
-
-
-
-
-
+import Ventas from './Ventas';
 function App() {
   const [selectedSection, setSelectedSection] = useState('home');
 
@@ -30,6 +26,7 @@ function App() {
       {selectedSection ===  'services' && < Services />}
       {selectedSection === 'contact' && <Contact />}
       {selectedSection === 'location' && <Map />}
+      {selectedSection === 'sales' && <Ventas onSelect={handleSelect}   />}
       {selectedSection === 'blog' && <Blog />}
     </main>
     <Footer onSelect={handleSelect} />
