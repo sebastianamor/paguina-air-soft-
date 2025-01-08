@@ -9,7 +9,7 @@ function NavBar({ onSelect }) {
         <li><button  className='butonnav'   onClick={() => onSelect('services')}>servicios</button></li>
         <li><button  className='butonnav'   onClick={() => onSelect('contact')}>Contacto</button></li>
         <li><button  className='butonnav'   onClick={() => onSelect('location')}>cordenadas</button></li>
-        <li><button  className='butonnav'   onClick={() => onSelect('sales')}>ventas y reparaciones</button></li>
+        <li><button  className='butonnav'   onClick={() => onSelect('sales')}>ventas e insumos</button></li>
         <li><button  className='butonnav'   onClick={() => onSelect('blog')}>blog</button></li>
       </ul>
     </nav>
