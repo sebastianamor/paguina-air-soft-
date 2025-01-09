@@ -20,7 +20,7 @@ function Ventas({onSelect}) {
           <div className="iniciopag">
             <div className="inicio" ></div>
             <p  className='final' >
-            ¡Prepárate para la acción con nuestros insumos de paintball y airsoft! ofrecemos una amplia gama de equipos diseñados para maximizar la diversión y el rendimiento en cada partida. Desde marcadoras de paintball de alta precisión hasta réplicas de airsoft realistas, contamos con opciones para jugadores principiantes y expertos.
+            ¡Prepárate para la acción con nuestros insumos  airsoft! ofrecemos una amplia gama de equipos diseñados para maximizar la diversión y el rendimiento en cada partida. Desde replicas de alta precisión hasta réplicas de airsoft realistas, contamos con opciones para jugadores principiantes y expertos.
 Además, te asesoramos para que elijas el equipo perfecto según tu estilo de juego y necesidades. Equiparte con lo mejor nunca fue tan fácil. ¡Visítanos y lleva tu experiencia al siguiente nivel!
             </p>
             </div>
@@ -32,7 +32,7 @@ Además, te asesoramos para que elijas el equipo perfecto según tu estilo de ju
              <img   src={foto1}  alt='foto1' className='equipo1'  /> 
              <img   src={foto2}  alt='foto1' className='equipo1'  /> 
 
-             <p> ventas de variedad de insumos pintball y airsoft  </p>
+             <p> ventas de variedad de insumos de airsoft  </p>
              <button class="reserve-btn"  onClick={() => onSelect('contact')} >Cotiza</button>
             </div>
             
