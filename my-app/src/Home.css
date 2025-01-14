@@ -21,75 +21,34 @@ body {
 }
 
 .dosa,
-.tres {
-  max-width: 45%; /* Imagen ocupa menos espacio en móviles */
-  height: auto;
-  border-radius: 8px;
-  margin: 0 auto;
-}
-
-.equipo1 {
-  max-width: 45%; /* Imagen ocupa menos espacio en móviles */
-  height: auto;
-  width: 500px;
-  border-radius: 8px;
-  margin: 0 auto;
-}
-
-
+.tres,
+.equipo1,
 .general {
-  max-width: 45%; /* Imagen ocupa menos espacio en móviles */
+  max-width: 90%; /* Ajustado para pantallas pequeñas */
   height: auto;
-  width: 400px;
   border-radius: 8px;
   margin: 0 auto;
 }
 
-.iniciopag {
-  background-size: cover;
-  background-position: center;
-  font-size: 1.2em;
-  background-color: black;
-  color: white;
-  line-height: 1.5;
-  padding: 10px;
-  text-align: left;
-}
-
-.home-item {
-  background-size: cover;
-  background-position: center;
-  font-size: 1em;
-  background-color: black;
-  line-height: 1.5;
-  padding: 10px;
-  text-align: justify;
-  color: rgba(84, 171, 17, 0.737);
-  font-family: "Black Ops One", system-ui;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
+.iniciopag,
+.home-item,
 .final {
   background-size: cover;
   background-position: center;
-  font-size: 1.5em;
   background-color: black;
-  line-height: 1.5;
-  padding: 10px;
-  text-align: justify;
   color: rgba(84, 171, 17, 0.737);
   font-family: "Black Ops One", system-ui;
+  line-height: 1.5;
+  padding: 15px;
+  text-align: justify;
   display: flex;
-  align-items: center;
-  gap: 20px;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
 }
 
 .home-text {
-  max-width: 100%; /* Ajuste para pantallas pequeñas */
+  max-width: 100%;
   text-align: center;
 }
 
@@ -98,24 +57,19 @@ body {
   margin-bottom: 15px;
 }
 
-.firmaf {
-  padding-left: 10px;
-}
-
 .containerA {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Se ajusta al ancho del dispositivo */
+  width: 100%;
   max-width: 800px;
 }
 
 .box {
   background-color: #144532;
   color: #fff;
-  width: 90%; /* Ajuste para móviles */
-  height: auto;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,8 +77,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-size: 3.2em;
-  margin: 10px auto;
+  font-size: 1.5em;
+  margin: 15px auto;
   padding: 20px;
 }
 
@@ -134,12 +88,16 @@ body {
   background-color: #ff9a5a;
   border: none;
   color: white;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 15px;
+  font-size: 1.2em;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reserve-btn:hover {
+  background-color: #ff7a3a;
 }
 
 /* Estilos para dispositivos móviles */
@@ -152,13 +110,13 @@ body {
   .dosa,
   .tres {
     max-width: 90%;
-    margin: 0 auto 20px auto;
+    margin: 10px auto;
   }
 
   .iniciopag {
     font-size: 1em;
-    text-align: center;
     padding: 15px;
+    text-align: center;
   }
 
   .home p {
@@ -166,23 +124,28 @@ body {
     gap: 10px;
   }
 
-  .home-text h2 {
-    font-size: 1.2em;
-  }
-
   .box {
     width: 100%;
     margin: 10px 0;
+  }
+
+  .reserve-btn {
+    width: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .containerA {
     flex-direction: column;
-    align-items: center;
   }
 
   .box {
-    margin: 10px 0;
+    width: 95%;
+  }
+
+  .reserve-btn {
+    padding: 10px;
+    font-size: 1em;
   }
 }
+
