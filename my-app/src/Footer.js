@@ -28,7 +28,7 @@ function Footer({ onSelect } ) {
         <div className="contact-info">
           <h3>Contacto</h3>
           <ul>
-          <li ><i ><span ><a href="tel:+56 9 7479 4026" title="telefono contacto"><FcPhone />+56 9 7479 4026 </a></span></i></li>
+          <li ><i ><span ><a href="tel:+56 9 7479 4026" title="telefono contacto"><FcPhone />+56 9 7479 4026 </a>  <a href="tel:+56 9 4992 3688" title="telefono contacto"><FcPhone />+56 9 4992 3688  </a>    </span></i></li>
           <li ><i ><span ><a href="mailto:jmvimports01@gmail.com " title="email de contacto y cotiazacion"><FcAddressBook />ciudadairsoft@gmail.com</a></span></i></li>
             <li ><i ><span> <a href='https://maps.app.goo.gl/Uj5mXHBFWgPEoNer8'  > <FcDepartment />Av. Balmaceda 20694, 9670858 Talagante, Región Metropolitana, entrada por calle Loreto</a></span></i></li>
           </ul>

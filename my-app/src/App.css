@@ -1,13 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  font-style: "Noto Sans", sans-serif;;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
+
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
+  padding: 10px;
 }
 
 main {
   padding: 20px;
+}
+
+/* Estilos específicos para teléfonos móviles */
+@media (max-width: 768px) {
+  .App {
+    font-size: 1em; /* Ajusta el tamaño de fuente para móviles */
+    padding: 15px;
+  }
+
+  main {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    font-size: 0.9em; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+  }
+
+  main {
+    padding: 5px;
+  }
 }
